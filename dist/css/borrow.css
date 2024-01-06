@@ -1,0 +1,142 @@
+li {
+  list-style: none;
+}
+.cl {
+  clear: both;
+}
+.w100 {
+  width: 100px;
+}
+.clear:after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  clear: both;
+}
+.tooltip-inner img {
+  width: 120px;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #00a8ff;
+  text-decoration: underline;
+}
+.navbar-inverse .navbar-brand {
+  color: #fff;
+  font-size: 18px;
+  padding: 14px 15px;
+}
+.navbar-inverse .navbar-brand i {
+  font-size: 24px;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+.navbar-default .navbar-nav > li > a {
+  line-height: 60px;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+.navbar-default .navbar-header {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #00a8ff;
+  background-color: #efefef;
+}
+@media all and (max-width: 770px) {
+  .navbar-default .container #bs-example-navbar-collapse-1 .nav > li > a {
+    line-height: 18px;
+  }
+}
+#isJoin .modal-body .glyphicon {
+  font-size: 34px;
+}
+#isJoin .modal-body .glyphicon-ok {
+  color: green;
+}
+#isJoin .modal-body .glyphicon-remove {
+  color: red;
+}
+#isJoin .modal-body #outNum {
+  font-size: 30px;
+  color: red;
+}
+.el-borrow {
+  margin: 30px auto;
+}
+.el-borrow-item {
+  float: left;
+}
+.el-borrow-item .el-borrow-item-title {
+  font-size: 24px;
+  background-color: #ec7e20;
+  font-weight: 300;
+  line-height: 48px;
+  padding-left: 20px;
+  color: #FFFFFF;
+}
+.el-borrow-item .el-borrow-item-content {
+  background-color: #f9f9f9;
+  padding: 14px;
+  font-size: 16px;
+}
+.el-borrow-item .el-borrow-item-content a {
+  font-size: 13px;
+}
+.el-borrow-item .el-borrow-item-content .help-block {
+  font-size: 13px;
+}
+.el-borrow-item .el-borrow-item-content ul {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+.el-borrow-item .el-borrow-item-content ul li {
+  color: #555;
+  font-size: 14px;
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 5px;
+  background: url("../../images/sequare.png") left center no-repeat;
+}
+.el-borrow-item .el-borrow-item-content .el-borrow-apply {
+  border-radius: 20px;
+  background: #00a8ff;
+  color: #fff;
+  display: block;
+  margin: 0px auto;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.el-borrow-item .el-borrow-item-content .el-borrow-apply:HOVER {
+  background: #008fd9;
+  text-decoration: none;
+}
+@media all and (max-width: 620px) {
+  .el-borrow-item {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+.el-footer {
+  background-color: #f8f8f8;
+  margin: 20px 0px 20px 0px;
+  padding-top: 30px;
+}
+.el-footer .container .col-sm-2 div p {
+  padding-bottom: 15px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.el-footer .container .col-sm-2 div a img {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=maps/borrow.css.map */

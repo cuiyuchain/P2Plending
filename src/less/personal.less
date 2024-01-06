@@ -1,0 +1,67 @@
+@import url('header.less');
+//正文
+.member {
+    margin-top: 8px;
+}
+//左侧列表组样式
+.panel-group {
+    margin-bottom: 6px;
+}
+//左侧菜单的选中样式定义
+.list-group .active a {
+    color: @colorWhite;
+}
+//头像
+#head_icon {
+    width: 120px;
+    margin: 0 15px;
+}
+//金额统计
+#money {
+    margin: 15px 0;
+    padding: 15px 0;
+    border-top: 1px solid #999;
+    div {
+        text-align: center;
+        font-size: 16px;
+    }
+}
+.clear {
+    clear: both;
+}
+#auth_icon {
+    margin: 20px 0;
+}
+//大屏下的收齐展开按钮
+#toggleBtn {
+    position: relative;
+    top: -15px;
+    left: -15px;
+    display: none;
+}
+//屏幕在768以下时正文样式
+@media all and (max-width:768px) {
+    #memberMain {
+        position: relative;
+        left: 0;
+        height: 850px;
+        transition: all 0.2s linear;
+    }
+    #memberMain.active {
+        left: -54%;
+    }
+    #rightCon {
+        position: absolute;
+        right: -50%;
+    }
+    //去掉横向滚动条
+    body{
+        overflow-x: hidden;
+    }
+
+    //小屏时切换按钮显示
+    #toggleBtn{
+        display: block;
+    }
+}
+@import url('footer.less');

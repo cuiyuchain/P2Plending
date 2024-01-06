@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 视口 -->
+    <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 视口 -->
+    <title>p2p登录</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+        <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="lib/bootstrapvalidator/dist/css/bootstrapValidator.min.css">
+    <link rel="stylesheet" href="lib/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./dist/css/login-join.css">
+</head>
+<body class="login-join">
+    <!-- 页头导航条 -->
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-phone-alt"></span><i> 028-86261949</i></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html"><span class="fa fa-home"></span>首页</a>
+                    </li>
+                    <li>
+                        <a href="join.html"><span class="fa fa-registered"></span>快速注册</a>
+                    </li>
+                    <li>
+                        <a href="login.html"><span class="fa fa-sign-in-alt"></span>登录</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-hands-helping">帮助</span></a>
+                    </li>
+                    <li id="weixinTips" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<img src='./images/contract.png'>">
+                        <a href="#"><span class="fab fa-weixin"></span>联系客服</a>
+                    </li>
+                    <!-- 登录后显示 -->
+                    <!-- <li>
+                        <a href="#"><span class="fa fa-home"></span>小强</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-home"></span>注销</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-home"></span>赶快充值</a>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- 页头导航条 end -->
+    <!-- 主导航条  start-->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> -->
+                <a class="" href="#"><img src="images/logo.png" alt=""></a>
+                <div class="cl"></div>
+            </div>
+
+            <div class=" navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="invest.html">我要投资</a></li>
+                    <li><a href="borrow.html">我要借款</a></li>
+                    <li><a href="personal.html">个人中心</a></li>
+                    <li><a href="#">新手指引</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- 主导航条 end -->
+    <!-- 正文内容  start-->
+    <div class="container lg-content">
+        <!-- title -->
+        <div class="panel">
+            <p class="panel-heading">用户登录</p>
+            <!-- body -->
+            <div class="panel-body">
+                <form id="loginFrom" class="form-horizontal el-login-form" action="" method="">
+                    <div class="form-group">
+                        <div class="col-sm-4 col-xs-12 text-right">
+                            <label for="username" class="control-label">用户名</label>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <input class="form-control" type="text" name="username" placeholder="请输入用户名" id="username">
+                        </div>
+                        <div class="col-sm-4 col-xs-12"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4 col-xs-12 text-right">
+                            <label for="password" class="control-label">密码</label>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <input class="form-control" type="password" name="password" placeholder="请输入密码" id="password">
+                        </div>
+                        <div class="col-sm-4 col-xs-12"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-4 col-sm-10">
+                            <button type="submit" class="btn btn-success">立即登录</button>
+                            <a href="join.html">新用户，马上注册</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 正文内容 end -->
+    <!-- 登录成功后Modal -->
+    <div class="modal fade" id="isJoin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">用户登录提示</h4>
+                </div>
+                <div class="modal-body">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页脚  start-->
+    <div class="row el-footer">
+        <div class="container">
+            <div class="col-sm-8">
+                <p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
+                <p>版权所有： 2006-2015成都源代码教育咨询有限公司</p>
+                <p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+                <p>电  话： 028-86261949 / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
+                <p>
+                    <a href="#">蜀ICP备14030149号-1</a>
+                    <a href="#">蜀公网安备510114990541</a>
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <div>
+                    <p>官方微博：</p>
+                    <a href="#">
+                        <img src="./images/tecent.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="./images/sina.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div>
+                    <p>官方微信：</p>
+                    <a href="#">
+                        <img src="./images/wx.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页脚 end -->
+    <!-- jq引入 -->
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- 引入bootstrapValidator js -->
+    <script src="lib/bootstrapvalidator/dist/js/bootstrapValidator.min.js"></script>
+    <!-- 引入自定义脚本 -->
+    <script src="./dist/js/p2pDispose.js"></script>
+    <!-- 引入表单验证配置js -->
+    <script src="./dist/js/p2pCheckForm.js"></script>
+</body>
+</html>
